@@ -1,0 +1,1071 @@
+<!DOCTYPE html>
+
+<head>
+    <title>E-Phone</title>
+    <link rel="shortcut icon" href="./img/icon.jpg" type="image/x-icon">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <!-- CSS icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- script -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+</head>
+
+<body>
+    <section id="main-page">
+        <nav class="navbar fixed-top navbar-expand-lg bg-color">
+            <div class="container-fluid">
+                <a class="navbar-brand">E-Phone</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <input class="nav-search form-control me-2" type="search" placeholder="Search"
+                                aria-label="Search">
+
+                        </li>
+                        <li>
+                            <div class="dropdown-center">
+                                <button type="button" class="profile-btn btn btn-secondary" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <i class="bi bi-person-circle"></i>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark">
+                                    <li><a class="dropdown-item" id="btn_login" href="#">Login</a></li>
+                                    <li><a class="dropdown-item" id="btn_register" href="#">Register</a></li>
+                                    <li><a class="dropdown-item" id="btn_profile_name" href="#"></a></li>
+                                    <li><a class="dropdown-item" id="btn_logout" href="index.html">Logout <i
+                                                class="bi bi-box-arrow-right"></i></a></li>
+                                </ul>
+                            </div>
+
+                        </li>
+                        <li>
+                            <a class="nav-link active" id="home-btn" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li>
+                            <a class="nav-link active" aria-current="page" href="#footer">About</a>
+                        </li>
+                        <li>
+                            <a class="nav-link active" id="cart-nav-btn" href="#">Cart</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <section class="sub-nav" id="main-nav">
+        <div class="container-fluid">
+            <div class="row opt-row">
+                <div class="opt-main col-sm-6 col-md-2">
+                    <a class="opt-link" id="apple-btn"><img class="opt-menu" src="./img/company/apple.png" alt="Apple">
+                        <p class="company-name">Apple</p>
+                    </a>
+                </div>
+                <div class="opt-main col-sm-6 col-md-2">
+                    <a class="opt-link" id="samsung-btn"><img class="opt-menu" src="./img/company/samsung.png"
+                            alt="Samsung">
+                        <p class="company-name">Samsung</p>
+                    </a>
+                </div>
+                <div class="opt-main col-sm-6 col-md-2">
+                    <a class="opt-link" id="xiaomi-btn"><img class="opt-menu" src="./img/company/xiaomi.png"
+                            alt="xiaomi">
+                        <p class="company-name">Xiaomi</p>
+                    </a>
+                </div>
+                <div class="opt-main col-sm-6 col-md-2">
+                    <a class="opt-link" id="honor-btn"><img class="opt-menu" src="./img/company/honor.png" alt="honor">
+                        <p class="company-name">Honor</p>
+                    </a>
+                </div>
+                <div class="opt-main col-sm-6 col-md-2">
+                    <a class="opt-link" id="realme-btn"><img class="opt-menu" src="./img/company/realme.png"
+                            alt="Realme">
+                        <p class="company-name">Realme</p>
+                    </a>
+                </div>
+                <div class="opt-main col-sm-6 col-md-2">
+                    <a class="opt-link" id="micromax-btn"><img class="opt-menu" src="./img/company/micromax.png"
+                            alt="Micromax">
+                        <p class="company-name">micromax</p>
+                    </a>
+                </div>
+            </div>
+    </section>
+    <section class="img-scroll">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="./img/img_scroll/img-1.webp" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./img/img_scroll/img-2.webp" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./img/img_scroll/img-3.webp" alt="Second slide">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="home-page">
+        <div class="trending-offers">
+            <hr> <b class="main_headings">Trending Offers</b><button id="to_btn"
+                class="tre_show_more btn btn-success">Show
+                More</button>
+            <hr>
+            <div class="row" id="t_row1">
+                <div class="col-card col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" id="tre-1">
+                    <img class="product_pic" src="./img/phones/pro_1.webp" alt="">
+                    <p class="pro_head">POCO C31</p>
+                    <p class="pro_sub">Special Offers</p>
+                    <p class="pro_dis">Hurry, Don't Miss Out!</p>
+                </div>
+                <div class="col-card col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" id="tre-2">
+                    <img class="product_pic" src="./img/phones/pro_2.webp" alt="">
+                    <p class="pro_head">Realme C20</p>
+                    <p class="pro_sub">Special Offers</p>
+                    <p class="pro_dis">Hurry, Don't Miss Out!</p>
+                </div>
+                <div class="col-card col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" id="tre-3">
+                    <img class="product_pic" src="./img/phones/pro_3.webp" alt="">
+                    <p class="pro_head">Realme 9 5G</p>
+                    <p class="pro_sub">Special Offers</p>
+                    <p class="pro_dis">Hurry, Don't Miss Out!</p>
+                </div>
+                <div class="col-card col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" id="tre-4">
+                    <img class="product_pic" src="./img/phones/pro_4.webp" alt="">
+                    <p class="pro_head">SAMSUNG Galaxy F22</p>
+                    <p class="pro_sub">Special Offers</p>
+                    <p class="pro_dis">Hurry, Don't Miss Out!</p>
+                </div>
+                <div class="col-card col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" id="tre-5">
+                    <img class="product_pic" src="./img/phones/pro_5.webp" alt="">
+                    <p class="pro_head">POCO F4 5G</p>
+                    <p class="pro_sub">Special Offers</p>
+                    <p class="pro_dis">Hurry, Don't Miss Out!</p>
+                </div>
+                <div class="col-card col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" id="tre-6">
+                    <img class="product_pic" src="./img/phones/pro_6.webp" alt="">
+                    <p class="pro_head">Realme Narzo 50i</p>
+                    <p class="pro_sub">Special Offers</p>
+                    <p class="pro_dis">Hurry, Don't Miss Out!</p>
+                </div>
+            </div>
+            <div class="row" id="t_row2">
+                <div class="col-card col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" id="tre-7">
+                    <img class="product_pic" src="./img/phones/pro_7.webp" alt="">
+                    <p class="pro_head">SAMSUNG Galaxy F12</p>
+                    <p class="pro_sub">Special Offers</p>
+                    <p class="pro_dis">Hurry, Don't Miss Out!</p>
+                </div>
+                <div class="col-card col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" id="tre-8">
+                    <img class="product_pic" src="./img/phones/pro_8.webp" alt="">
+                    <p class="pro_head">OPPO K10</p>
+                    <p class="pro_sub">Special Offers</p>
+                    <p class="pro_dis">Hurry, Don't Miss Out!</p>
+                </div>
+                <div class="col-card col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" id="tre-9">
+                    <img class="product_pic" src="./img/phones/pro_9.webp" alt="">
+                    <p class="pro_head">REDMI 10</p>
+                    <p class="pro_sub">Special Offers</p>
+                    <p class="pro_dis">Hurry, Don't Miss Out!</p>
+                </div>
+                <div class="col-card col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" id="tre-10">
+                    <img class="product_pic" src="./img/phones/pro_10.webp" alt="">
+                    <p class="pro_head">MOTOROLA G60</p>
+                    <p class="pro_sub">Special Offers</p>
+                    <p class="pro_dis">Hurry, Don't Miss Out!</p>
+                </div>
+                <div class="col-card col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" id="tre-11">
+                    <img class="product_pic" src="./img/phones/pro_11.webp" alt="">
+                    <p class="pro_head">MOTOROLA e40</p>
+                    <p class="pro_sub">Special Offers</p>
+                    <p class="pro_dis">Hurry, Don't Miss Out!</p>
+                </div>
+                <div class="col-card col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" id="tre-12">
+                    <img class="product_pic" src="./img/phones/pro_12.webp" alt="">
+                    <p class="pro_head">REDMI Note 10T 5G</p>
+                    <p class="pro_sub">Special Offers</p>
+                    <p class="pro_dis">Hurry, Don't Miss Out!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="trending-offers">
+            <hr> <b class="main_headings">Mobiles</b><button id="m_btn" class="mob_show_more btn btn-success">Show
+                More</button>
+            <hr>
+            <div class="row" id="m_row1">
+                <div class="col-card col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" id="mob-1">
+                    <img class="product_pic" src="./img/phones/pro_9.webp" alt="">
+                    <p class="pro_head">REDMI 10</p>
+                    <p class="pro_sub">Special Offers</p>
+                    <p class="pro_dis">Hurry, Don't Miss Out!</p>
+                </div>
+                <div class="col-card col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" id="mob-2">
+                    <img class="product_pic" src="./img/phones/pro_8.webp" alt="">
+                    <p class="pro_head">OPPO K10</p>
+                    <p class="pro_sub">Special Offers</p>
+                    <p class="pro_dis">Hurry, Don't Miss Out!</p>
+                </div>
+                <div class="col-card col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" id="mob-3">
+                    <img class="product_pic" src="./img/phones/pro_11.webp" alt="">
+                    <p class="pro_head">MOTOROLA e40</p>
+                    <p class="pro_sub">Special Offers</p>
+                    <p class="pro_dis">Hurry, Don't Miss Out!</p>
+                </div>
+                <div class="col-card col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" id="mob-4">
+                    <img class="product_pic" src="./img/phones/pro_10.webp" alt="">
+                    <p class="pro_head">MOTOROLA G60</p>
+                    <p class="pro_sub">Special Offers</p>
+                    <p class="pro_dis">Hurry, Don't Miss Out!</p>
+                </div>
+                <div class="col-card col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" id="mob-5">
+                    <img class="product_pic" src="./img/phones/pro_7.webp" alt="">
+                    <p class="pro_head">SAMSUNG Galaxy F12</p>
+                    <p class="pro_sub">Special Offers</p>
+                    <p class="pro_dis">Hurry, Don't Miss Out!</p>
+                </div>
+                <div class="col-card col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" id="mob-6">
+                    <img class="product_pic" src="./img/phones/pro_2.webp" alt="">
+                    <p class="pro_head">Realme C20</p>
+                    <p class="pro_sub">Special Offers</p>
+                    <p class="pro_dis">Hurry, Don't Miss Out!</p>
+                </div>
+            </div>
+            <div class="row" id="m_row2">
+                <div class="col-card col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" id="mob-7">
+                    <img class="product_pic" src="./img/phones/pro_5.webp" alt="">
+                    <p class="pro_head">POCO F4 5G</p>
+                    <p class="pro_sub">Special Offers</p>
+                    <p class="pro_dis">Hurry, Don't Miss Out!</p>
+                </div>
+                <div class="col-card col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" id="mob-8">
+                    <img class="product_pic" src="./img/phones/pro_6.webp" alt="">
+                    <p class="pro_head">Realme Narzo 50i</p>
+                    <p class="pro_sub">Special Offers</p>
+                    <p class="pro_dis">Hurry, Don't Miss Out!</p>
+                </div>
+                <div class="col-card col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" id="mob-9">
+                    <img class="product_pic" src="./img/phones/pro_1.webp" alt="">
+                    <p class="pro_head">POCO C31</p>
+                    <p class="pro_sub">Special Offers</p>
+                    <p class="pro_dis">Hurry, Don't Miss Out!</p>
+                </div>
+                <div class="col-card col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" id="mob-10">
+                    <img class="product_pic" src="./img/phones/pro_4.webp" alt="">
+                    <p class="pro_head">SAMSUNG Galaxy F22</p>
+                    <p class="pro_sub">Special Offers</p>
+                    <p class="pro_dis">Hurry, Don't Miss Out!</p>
+
+                </div>
+                <div class="col-card col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" id="mob-11">
+                    <img class="product_pic" src="./img/phones/pro_3.webp" alt="">
+                    <p class="pro_head">Realme 9 5G</p>
+                    <p class="pro_sub">Special Offers</p>
+                    <p class="pro_dis">Hurry, Don't Miss Out!</p>
+                </div>
+                <div class="col-card col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" id="mob-12">
+                    <img class="product_pic" src="./img/phones/pro_12.webp" alt="">
+                    <p class="pro_head">REDMI Note 10T 5G</p>
+                    <p class="pro_sub">Special Offers</p>
+                    <p class="pro_dis">Hurry, Don't Miss Out!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="pro-buy-details">
+        <div class="container-fluid">
+            <div class="pro-div ">
+                <div class="row">
+                    <div class="col-12 col-sm-4">
+                        <div class="pro-img-div">
+                            <img class="pro-img" id="pro_img" src="" alt="">
+                            <div class="cart-buy-btn">
+                                <button class="btn-buynow" data-toggle="modal" data-target="#error_modal_popup">BUY NOW</button>
+                                <button class="btn-buynow" id="cart-btn" data-toggle="modal" data-target="#error_modal_popup"><i class="bi bi-cart-plus-fill"></i> ADD TO CART</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pro-discription col-12 col-sm-4">
+                        <span class="pro-name" id="pro_name">Product-Name</span><br>
+                        <div class="rate-star"><span id="rate_star">4.4</span>
+                            <i class="bi bi-star"></i>
+                        </div>
+                        <span class="rate-no" id="rate_no">74,590 Ratings & 4,341 Reviews</span><br>
+                        <span class="in-money">₹</span><span class="pro-price" id="pro_price">7,999</span>
+                        <span class="in-old-money">₹</span><span class="old-pro-price" id="old_pro_price">11,999</span>
+                        <span class="pro-offer" id="pro_offer"></span><br>
+                        <span class="ava-offer">Available offers</span><br>
+                        <span><i class="bi bi-caret-right-fill"></i>
+                            <span class="ava-offer-bold">Bank Offer5% </span>
+                            Cashback on Axis Bank Card
+                        </span><br>
+                        <span><i class="bi bi-caret-right-fill"></i>
+                            <span class="ava-offer-bold">Bank Offer </span>
+                            Flat <span>₹</span>100 Off* On 1st Transaction through e-phone Pay Late
+                        </span><br>
+                        <span><i class="bi bi-caret-right-fill"></i>
+                            <span class="ava-offer-bold">Special Price </span>
+                            Extra <span>₹</span>4000 off(price inclusive of discount)
+                        </span><br>
+                        <table class="pro-details-table">
+                            <tr>
+                                <td class="pro-details-table-col-1">Storage</td>
+                                <td class="pro-details-table-col-2">
+                                    <select class="form-select">
+                                        <option selected disabled>Select the Storage</option>
+                                        <option id="phone_storage_1" value="1">One</option>
+                                        <option id="phone_storage_2" value="2">Two</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="pro-details-table-col-1">Ram</td>
+                                <td class="pro-details-table-col-2">
+                                    <select class="form-select">
+                                        <option selected disabled>Select the Ram</option>
+                                        <option id="phone_ram_1" value="1">One</option>
+                                        <option id="phone_ram_2" value="2">Two</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="pro-details-table-col-1">Delivery</td>
+                                <td class="pro-details-table-col-2"><input type="text" id="pin_code" class="pin-code form-control" placeholder="Pincode">
+                                <p id="pincode-error"></p></td>
+                            </tr>
+                            <tr>
+                                <td class="pro-details-table-col-1">Seller</td>
+                                <td class="pro-details-table-col-2" id="pro_seller">APS Commerce</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="pro-specifications">
+                    <span class="pro-speci">Specifications</span>
+                    <hr>
+                    <table class="pro-table">
+                        <tr class="pro-table-row">
+                            <td class="pro-table-col-1">In The Box</td>
+                            <td class="pro-table-col-2">Handset, Power Adapter, Micro-USB Cable, SIM Ejector Tool, User
+                                Guide and Warranty Card</td>
+                        </tr>
+                        <tr class="pro-table-row">
+                            <td class="pro-table-col-1">Model Number</td>
+                            <td class="pro-table-col-2" id="model_number">MZB0A0KIN</td>
+                        </tr>
+                        <tr class="pro-table-row">
+                            <td class="pro-table-col-1">Model Name</td>
+                            <td class="pro-table-col-2" id="model_name">C31</td>
+                        </tr>
+                        <tr class="pro-table-row">
+                            <td class="pro-table-col-1">Color</td>
+                            <td class="pro-table-col-2" id="pro_color">Royal Blue</td>
+                        </tr>
+                        <tr class="pro-table-row">
+                            <td class="pro-table-col-1">Browse Type</td>
+                            <td class="pro-table-col-2">Smartphones</td>
+                        </tr>
+                        <tr class="pro-table-row">
+                            <td class="pro-table-col-1">SIM Type</td>
+                            <td class="pro-table-col-2">Dual Sim</td>
+                        </tr>
+                        <tr class="pro-table-row">
+                            <td class="pro-table-col-1">Hybrid Sim Slot</td>
+                            <td class="pro-table-col-2">No</td>
+                        </tr>
+                    </table><br>
+                </div><br>
+            </div>
+        </div>
+    </section>
+    <!-- xiaomi products -->
+    <section class="xiaomi-sec">
+        <div class="trending-offers">
+            <hr> <b class="main_headings">Xiaomi</b>
+            <hr>
+            <div class="row" id="t_row1">
+                <div class="col-card col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" id="Xiaomi-1">
+                    <img class="product_pic" src="./img/phones/mi/redmi-9a-sport-9a-metallic-blue.webp" alt="">
+                    <p class="pro_head">Redmi 9A Sport</p>
+                    <p class="pro_sub">(Metallic Blue, 32 GB)</p>
+                </div>
+                <div class="col-card col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" id="Xiaomi-2">
+                    <img class="product_pic" src="./img/phones/mi/REDMI-10A-Slate-grey.webp" alt="">
+                    <p class="pro_head">REDMI 10A</p>
+                    <p class="pro_sub">(Slate grey, 64 GB)</p>
+                </div>
+                <div class="col-card col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" id="Xiaomi-3">
+                    <img class="product_pic" src="./img/phones/mi/Redmi-Note-11-Space-Black.webp" alt="">
+                    <p class="pro_head">Redmi Note 11</p>
+                    <p class="pro_sub">(Space Black, 64 GB)</p>
+                </div>
+                <div class="col-card col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" id="Xiaomi-4">
+                    <img class="product_pic" src="./img/phones/mi/Redmi-Note-11S-Space-Black.webp" alt="">
+                    <p class="pro_head">Redmi Note 11S</p>
+                    <p class="pro_sub">(Space Black, 128 GB)</p>
+                </div>
+                <div class="col-card col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" id="Xiaomi-5">
+                    <img class="product_pic" src="./img/phones/mi/Xiaomi-11T-Pro-Hyperphone-Moonlight-White.webp"
+                        alt="">
+                    <p class="pro_head">Xiaomi 11T Pro 5G Hyperphone</p>
+                    <p class="pro_sub">(Moonlight White, 128 GB)</p>
+                </div>
+                <div class="col-card col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" id="Xiaomi-6">
+                    <img class="product_pic" src="./img/phones/mi/Redmi-Note-11-PRO-Plus-PHANTOM-WHITE.webp" alt="">
+                    <p class="pro_head">Redmi Note 11 PRO Plus 5G</p>
+                    <p class="pro_sub">(PHANTOM WHITE, 256 GB)</p>
+                </div>
+            </div>
+            <div class="row" id="t_row2">
+                <div class="col-card col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" id="Xiaomi-7">
+                    <img class="product_pic" src="./img/phones/mi/Xiaomi-11T-Pro-Hyperphone-Moonlight-White.webp"
+                        alt="">
+                    <p class="pro_head">Xiaomi 11T Pro 5G Hyperphone</p>
+                    <p class="pro_sub">(Moonlight White, 128 GB)</p>
+                </div>
+                <div class="col-card col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" id="Xiaomi-8">
+                    <img class="product_pic" src="./img/phones/mi/redmi-9a-sport-9a-metallic-blue.webp" alt="">
+                    <p class="pro_head">Redmi 9A Sport</p>
+                    <p class="pro_sub">(Metallic Blue, 32 GB)</p>
+                </div>
+                <div class="col-card col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" id="Xiaomi-9">
+                    <img class="product_pic" src="./img/phones/mi/Redmi-Note-11-PRO-Plus-PHANTOM-WHITE.webp" alt="">
+                    <p class="pro_head">Redmi Note 11 PRO Plus 5G</p>
+                    <p class="pro_sub">(PHANTOM WHITE, 256 GB)</p>
+                </div>
+                <div class="col-card col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" id="Xiaomi-10">
+                    <img class="product_pic" src="./img/phones/mi/REDMI-10A-Slate-grey.webp" alt="">
+                    <p class="pro_head">REDMI 10A</p>
+                    <p class="pro_sub">(Slate grey, 64 GB)</p>
+                </div>
+                <div class="col-card col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" id="Xiaomi-11">
+                    <img class="product_pic" src="./img/phones/mi/Redmi-Note-11S-Space-Black.webp" alt="">
+                    <p class="pro_head">Redmi Note 11S</p>
+                    <p class="pro_sub">(Space Black, 128 GB)</p>
+                </div>
+                <div class="col-card col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" id="Xiaomi-12">
+                    <img class="product_pic" src="./img/phones/mi/Redmi-Note-11-Space-Black.webp" alt="">
+                    <p class="pro_head">Redmi Note 11</p>
+                    <p class="pro_sub">(Space Black, 64 GB)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end xiaomi products -->
+    <!-- apple products -->
+    <section class="apple-sec">
+        <div class="trending-offers">
+            <hr> <b class="main_headings">Apple</b>
+            <hr>
+            <div class="row" id="t_row1">
+                <div class="col-card col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" id="apple-1">
+                    <img class="product_pic" src="./img/phones/apple/iphone-11.webp" alt="">
+                    <p class="pro_head"> APPLE iPhone 11</p>
+                    <p class="pro_sub">(Black, 64 GB)</p>
+                </div>
+                <div class="col-card col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" id="apple-2">
+                    <img class="product_pic" src="./img/phones/apple/iphone-12.webp" alt="">
+                    <p class="pro_head">APPLE iPhone 12</p>
+                    <p class="pro_sub">(Black, 128 GB)</p>
+                </div>
+                <div class="col-card col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" id="apple-3">
+                    <img class="product_pic" src="./img/phones/apple/apple-iphone-se.webp" alt="">
+                    <p class="pro_head">APPLE iPhone 11</p>
+                    <p class="pro_sub">(Red, 64 GB)</p>
+                </div>
+                <div class="col-card col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" id="apple-4">
+                    <img class="product_pic" src="./img/phones/apple/apple-iphone-12-mini.webp" alt="">
+                    <p class="pro_head">APPLE iPhone 12</p>
+                    <p class="pro_sub">(Green, 128 GB)</p>
+                </div>
+                <div class="col-card col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" id="apple-5">
+                    <img class="product_pic" src="./img/phones/apple/iphone-13-mini.webp" alt="">
+                    <p class="pro_head">APPLE iPhone 13 Mini</p>
+                    <p class="pro_sub">(Midnight, 128 GB)</p>
+                </div>
+                <div class="col-card col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" id="apple-6">
+                    <img class="product_pic" src="./img/phones/apple/iphone-13-pro.webp" alt="">
+                    <p class="pro_head">APPLE iPhone 13 Pro Max</p>
+                    <p class="pro_sub">(Silver, 1 TB)</p>
+                </div>
+            </div>
+            <div class="row" id="t_row2">
+                <div class="col-card col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" id="apple-7">
+                    <img class="product_pic" src="./img/phones/apple/iphone-13-pro-graphite.webp" alt="">
+                    <p class="pro_head">APPLE iPhone 13 Pro Max</p>
+                    <p class="pro_sub">(Graphite, 1 TB)</p>
+                </div>
+                <div class="col-card col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" id="apple-8">
+                    <img class="product_pic" src="./img/phones/apple/apple-iphone-12-pro-max-gold.webp" alt="">
+                    <p class="pro_head">APPLE iPhone 12 Pro Max</p>
+                    <p class="pro_sub">(Gold, 512 GB)</p>
+                </div>
+                <div class="col-card col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" id="apple-9">
+                    <img class="product_pic" src="./img/phones/apple/apple-iphone-12-pro-max-pacific-blue.webp" alt="">
+                    <p class="pro_head">APPLE iPhone 12 Pro Max</p>
+                    <p class="pro_sub">(Pacific Blue, 256 GB)</p>
+                </div>
+                <div class="col-card col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" id="apple-10">
+                    <img class="product_pic" src="./img/phones/apple/iphone-13-starlight.webp" alt="">
+                    <p class="pro_head">APPLE iPhone 13</p>
+                    <p class="pro_sub">(Starlight, 512 GB)</p>
+                </div>
+                <div class="col-card col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" id="apple-11">
+                    <img class="product_pic" src="./img/phones/apple/iphone-12-mini-purple.webp" alt="">
+                    <p class="pro_head">APPLE iPhone 12 Mini</p>
+                    <p class="pro_sub">(Purple, 256 GB)</p>
+                </div>
+                <div class="col-card col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" id="apple-12">
+                    <img class="product_pic" src="./img/phones/apple/apple-iphone-12-mini-red.webp" alt="">
+                    <p class="pro_head">APPLE iPhone 12 Mini</p>
+                    <p class="pro_sub">(Red, 256 GB)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end apple products -->
+    <!-- realme products -->
+    <section class="realme-sec">
+        <div class="trending-offers">
+            <hr> <b class="main_headings">Realme</b>
+            <hr>
+            <div class="row" id="t_row1">
+                <div class="col-card col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" id="realme-1">
+                    <img class="product_pic" src="./img/phones/realme/realme-9-Meteor-Black.webp" alt="">
+                    <p class="pro_head">realme 9 5G</p>
+                    <p class="pro_sub">(Meteor Black, 64 GB)</p>
+                </div>
+                <div class="col-card col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" id="realme-2">
+                    <img class="product_pic" src="./img/phones/realme/realme-9i-Prism-Blue.webp" alt="">
+                    <p class="pro_head">realme 9i</p>
+                    <p class="pro_sub">(Prism Blue, 64 GB)</p>
+                </div>
+                <div class="col-card col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" id="realme-3">
+                    <img class="product_pic" src="./img/phones/realme/realme-Narzo-50i-Carbon-Black.webp" alt="">
+                    <p class="pro_head">realme Narzo 50i</p>
+                    <p class="pro_sub">(Carbon Black, 32 GB)</p>
+                </div>
+                <div class="col-card col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" id="realme-4">
+                    <img class="product_pic" src="./img/phones/realme/realme-C35-Glowing-Black.webp" alt="">
+                    <p class="pro_head">realme C35</p>
+                    <p class="pro_sub">(Glowing Black, 64 GB)</p>
+                </div>
+                <div class="col-card col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" id="realme-5">
+                    <img class="product_pic" src="./img/phones/realme/realme-C31-Dark-Green.webp" alt="">
+                    <p class="pro_head">realme C31</p>
+                    <p class="pro_sub">(Dark Green, 32 GB)</p>
+                </div>
+                <div class="col-card col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" id="realme-6">
+                    <img class="product_pic" src="./img/phones/realme/realme-9-Pro-Aurora-Green.webp" alt="">
+                    <p class="pro_head">realme 9 Pro+ 5G</p>
+                    <p class="pro_sub">(Aurora Green, 128 GB)</p>
+                </div>
+            </div>
+            <div class="row" id="t_row2">
+                <div class="col-card col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" id="realme-7">
+                    <img class="product_pic" src="./img/phones/realme/realme-Narzo-50i-Carbon-Black.webp" alt="">
+                    <p class="pro_head">realme Narzo 50i</p>
+                    <p class="pro_sub">(Carbon Black, 32 GB)</p>
+                </div>
+                <div class="col-card col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" id="realme-8">
+                    <img class="product_pic" src="./img/phones/realme/realme-C31-Dark-Green.webp" alt="">
+                    <p class="pro_head">realme C31</p>
+                    <p class="pro_sub">(Dark Green, 32 GB)</p>
+                </div>
+                <div class="col-card col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" id="realme-9">
+                    <img class="product_pic" src="./img/phones/realme/realme-C35-Glowing-Black.webp" alt="">
+                    <p class="pro_head">realme C35</p>
+                    <p class="pro_sub">(Glowing Black, 64 GB)</p>
+                </div>
+                <div class="col-card col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" id="realme-10">
+                    <img class="product_pic" src="./img/phones/realme/realme-9-Meteor-Black.webp" alt="">
+                    <p class="pro_head">realme 9 5G</p>
+                    <p class="pro_sub">(Meteor Black, 64 GB)</p>
+                </div>
+                <div class="col-card col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" id="realme-11">
+                    <img class="product_pic" src="./img/phones/realme/realme-9-Pro-Aurora-Green.webp" alt="">
+                    <p class="pro_head">realme 9 Pro+ 5G</p>
+                    <p class="pro_sub">(Aurora Green, 128 GB)</p>
+                </div>
+                <div class="col-card col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" id="realme-12">
+                    <img class="product_pic" src="./img/phones/realme/realme-9i-Prism-Blue.webp" alt="">
+                    <p class="pro_head">realme 9i</p>
+                    <p class="pro_sub">(Prism Blue, 64 GB)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end realme products -->
+    <!-- honor products -->
+    <section class="honor-sec">
+        <div class="trending-offers">
+            <hr> <b class="main_headings">Honor</b>
+            <hr>
+            <div class="row" id="t_row1">
+                <div class="col-card col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" id="Honor-1">
+                    <img class="product_pic" src="./img/phones/honor/Honor-9N-Sapphire-Blue.webp" alt="">
+                    <p class="pro_head">Honor 9N</p>
+                    <p class="pro_sub">(Sapphire Blue, 32 GB)</p>
+                </div>
+                <div class="col-card col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" id="Honor-2">
+                    <img class="product_pic" src="./img/phones/honor/Honor-9i-Prestige-Gold.webp" alt="">
+                    <p class="pro_head">Honor 9i</p>
+                    <p class="pro_sub">(Prestige Gold, 64 GB)</p>
+                </div>
+                <div class="col-card col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" id="Honor-3">
+                    <img class="product_pic" src="./img/phones/honor/Honor-8X-Blue.webp" alt="">
+                    <p class="pro_head">Honor 8X</p>
+                    <p class="pro_sub">(Blue, 64 GB)</p>
+                </div>
+                <div class="col-card col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" id="Honor-4">
+                    <img class="product_pic" src="./img/phones/honor/Honor-7A-Gold.webp" alt="">
+                    <p class="pro_head">Honor 7A</p>
+                    <p class="pro_sub">(Gold, 32 GB)</p>
+                </div>
+                <div class="col-card col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" id="Honor-5">
+                    <img class="product_pic" src="./img/phones/honor/Honor-6X-Grey.webp" alt="">
+                    <p class="pro_head">Honor 6X</p>
+                    <p class="pro_sub">(Grey, 32 GB)</p>
+                </div>
+                <div class="col-card col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" id="Honor-6">
+                    <img class="product_pic" src="./img/phones/honor/Honor-8C-Blue.webp" alt="">
+                    <p class="pro_head">Honor 8C</p>
+                    <p class="pro_sub">(Blue, 32 GB)</p>
+                </div>
+            </div>
+            <div class="row" id="t_row2">
+                <div class="col-card col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" id="Honor-7">
+                    <img class="product_pic" src="./img/phones/honor/Honor-8X-Blue.webp" alt="">
+                    <p class="pro_head">Honor 8X</p>
+                    <p class="pro_sub">(Blue, 64 GB)</p>
+                </div>
+                <div class="col-card col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" id="Honor-8">
+                    <img class="product_pic" src="./img/phones/honor/Honor-6X-Grey.webp" alt="">
+                    <p class="pro_head">Honor 6X</p>
+                    <p class="pro_sub">(Grey, 32 GB)</p>
+                </div>
+                <div class="col-card col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" id="Honor-9">
+                    <img class="product_pic" src="./img/phones/honor/Honor-9N-Sapphire-Blue.webp" alt="">
+                    <p class="pro_head">Honor 9N</p>
+                    <p class="pro_sub">(Sapphire Blue, 32 GB)</p>
+                </div>
+                <div class="col-card col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" id="Honor-10">
+                    <img class="product_pic" src="./img/phones/honor/Honor-8C-Blue.webp" alt="">
+                    <p class="pro_head">Honor 8C</p>
+                    <p class="pro_sub">(Blue, 32 GB)</p>
+                </div>
+                <div class="col-card col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" id="Honor-11">
+                    <img class="product_pic" src="./img/phones/honor/Honor-7A-Gold.webp" alt="">
+                    <p class="pro_head">Honor 7A</p>
+                    <p class="pro_sub">(Gold, 32 GB)</p>
+                </div>
+                <div class="col-card col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" id="Honor-12">
+                    <img class="product_pic" src="./img/phones/honor/Honor-9i-Prestige-Gold.webp" alt="">
+                    <p class="pro_head">Honor 9i</p>
+                    <p class="pro_sub">(Prestige Gold, 64 GB)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end honor products -->
+    <!-- micromax products -->
+    <section class="micromax-sec">
+        <div class="trending-offers">
+            <hr> <b class="main_headings">Micromax</b>
+            <hr>
+            <div class="row" id="t_row1">
+                <div class="col-card col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" id="Micromax-1">
+                    <img class="product_pic" src="./img/phones/micromax/Micromax-Infinity-N12-Red-Velvet.webp" alt="">
+                    <p class="pro_head">Micromax Infinity N12</p>
+                    <p class="pro_sub">(Red Velvet, 32 GB)</p>
+                </div>
+                <div class="col-card col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" id="Micromax-2">
+                    <img class="product_pic" src="./img/phones/micromax/Micromax-Evok-Note-Champagne.webp" alt="">
+                    <p class="pro_head">Micromax Evok Note</p>
+                    <p class="pro_sub">(Champagne, 32 GB)</p>
+                </div>
+                <div class="col-card col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" id="Micromax-3">
+                    <img class="product_pic" src="./img/phones/micromax/Micromax-IN-1-Purple.webp" alt="">
+                    <p class="pro_head">Micromax IN</p>
+                    <p class="pro_sub">(Purple, 64 GB)</p>
+                </div>
+                <div class="col-card col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" id="Micromax-4">
+                    <img class="product_pic" src="./img/phones/micromax/Micromax-IN-2C-Brown.webp" alt="">
+                    <p class="pro_head">Micromax IN 2C</p>
+                    <p class="pro_sub">(Brown, 32 GB)</p>
+                </div>
+                <div class="col-card col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" id="Micromax-5">
+                    <img class="product_pic" src="./img/phones/micromax/Micromax-IN-Note-1-Green.webp" alt="">
+                    <p class="pro_head">Micromax IN Note 1</p>
+                    <p class="pro_sub">(Green, 64 GB)</p>
+                </div>
+                <div class="col-card col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" id="Micromax-6">
+                    <img class="product_pic" src="./img/phones/micromax/Micromax-IN-Note-2-Black.webp" alt="">
+                    <p class="pro_head">Micromax IN Note 2</p>
+                    <p class="pro_sub">(Black, 64 GB)</p>
+                </div>
+            </div>
+            <div class="row" id="t_row2">
+                <div class="col-card col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" id="Micromax-7">
+                    <img class="product_pic" src="./img/phones/micromax/Micromax-IN-1-Purple.webp" alt="">
+                    <p class="pro_head">Micromax IN </p>
+                    <p class="pro_sub">(Purple, 64 GB)</p>
+                </div>
+                <div class="col-card col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" id="Micromax-8">
+                    <img class="product_pic" src="./img/phones/micromax/Micromax-IN-Note-2-Black.webp" alt="">
+                    <p class="pro_head">Micromax IN Note 2</p>
+                    <p class="pro_sub">(Black, 64 GB)</p>
+                </div>
+                <div class="col-card col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" id="Micromax-9">
+                    <img class="product_pic" src="./img/phones/micromax/Micromax-IN-Note-1-Green.webp" alt="">
+                    <p class="pro_head">Micromax IN Note 1</p>
+                    <p class="pro_sub">(Green, 64 GB)</p>
+                </div>
+                <div class="col-card col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" id="Micromax-10">
+                    <img class="product_pic" src="./img/phones/micromax/Micromax-Evok-Note-Champagne.webp" alt="">
+                    <p class="pro_head">Micromax Evok Note</p>
+                    <p class="pro_sub">(Champagne, 32 GB)</p>
+                </div>
+                <div class="col-card col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" id="Micromax-11">
+                    <img class="product_pic" src="./img/phones/micromax/Micromax-IN-2C-Brown.webp" alt="">
+                    <p class="pro_head">Micromax IN 2C</p>
+                    <p class="pro_sub">(Brown, 32 GB)</p>
+                </div>
+                <div class="col-card col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" id="Micromax-12">
+                    <img class="product_pic" src="./img/phones/micromax/Micromax-Infinity-N12-Red-Velvet.webp" alt="">
+                    <p class="pro_head">Micromax Infinity N12</p>
+                    <p class="pro_sub">(Red Velvet, 32 GB)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end micromax products -->
+    <!-- samsung products -->
+    <section class="samsung-sec">
+        <div class="trending-offers">
+            <hr> <b class="main_headings">Samsung</b>
+            <hr>
+            <div class="row" id="t_row1">
+                <div class="col-card col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" id="Samsung-1">
+                    <img class="product_pic" src="./img/phones/samsung/samsung-galaxy-f13-waterfall-blue.webp" alt="">
+                    <p class="pro_head">SAMSUNG Galaxy F13</p>
+                    <p class="pro_sub">(Waterfall Blue, 128 GB)</p>
+                </div>
+                <div class="col-card col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" id="Samsung-2">
+                    <img class="product_pic" src="./img/phones/samsung/SAMSUNG-Galaxy-S21-White.webp" alt="">
+                    <p class="pro_head">SAMSUNG Galaxy S21 FE 5G</p>
+                    <p class="pro_sub">(White, 256 GB)</p>
+                </div>
+                <div class="col-card col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" id="Samsung-3">
+                    <img class="product_pic" src="./img/phones/samsung/SAMSUNG-Galaxy-F23-Copper-Blush.webp" alt="">
+                    <p class="pro_head">SAMSUNG Galaxy F23 5G</p>
+                    <p class="pro_sub">(Copper Blush, 128 GB)</p>
+                </div>
+                <div class="col-card col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" id="Samsung-4">
+                    <img class="product_pic" src="./img/phones/samsung/SAMSUNG-Galaxy-A73-Awesome-White.webp" alt="">
+                    <p class="pro_head">SAMSUNG Galaxy A73 5G</p>
+                    <p class="pro_sub">(Awesome White, 128 GB)</p>
+                </div>
+                <div class="col-card col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" id="Samsung-5">
+                    <img class="product_pic" src="./img/phones/samsung/SAMSUNG-Galaxy-A33-Awesome-Black.webp" alt="">
+                    <p class="pro_head">SAMSUNG Galaxy A33</p>
+                    <p class="pro_sub">(Awesome Black, 128 GB)</p>
+                </div>
+                <div class="col-card col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" id="Samsung-6">
+                    <img class="product_pic" src="./img/phones/samsung/SAMSUNG-Galaxy-A73-Awesome-Mint.webp" alt="">
+                    <p class="pro_head">SAMSUNG Galaxy A73 5G</p>
+                    <p class="pro_sub">(Awesome Mint, 128 GB)</p>
+                </div>
+            </div>
+            <div class="row" id="t_row2">
+                <div class="col-card col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" id="Samsung-7">
+                    <img class="product_pic" src="./img/phones/samsung/SAMSUNG-Galaxy-M32-Light-Blue.webp" alt="">
+                    <p class="pro_head">SAMSUNG Galaxy M32</p>
+                    <p class="pro_sub">(Light Blue, 64 GB)</p>
+                </div>
+                <div class="col-card col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" id="Samsung-8">
+                    <img class="product_pic" src="./img/phones/samsung/SAMSUNG-Galaxy-M52-Icy-Blue.webp" alt="">
+                    <p class="pro_head">SAMSUNG Galaxy M52 5G</p>
+                    <p class="pro_sub">(Icy Blue, 128 GB)</p>
+                </div>
+                <div class="col-card col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" id="Samsung-9">
+                    <img class="product_pic" src="./img/phones/samsung/SAMSUNG-Galaxy-F13-Nightsky-Green.webp" alt="">
+                    <p class="pro_head">SAMSUNG Galaxy F13</p>
+                    <p class="pro_sub">(Nightsky Green, 64 GB)</p>
+                </div>
+                <div class="col-card col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" id="Samsung-10">
+                    <img class="product_pic" src="./img/phones/samsung/SAMSUNG-Galaxy-S21-FE-Olive.webp" alt="">
+                    <p class="pro_head">SAMSUNG Galaxy S21 FE 5G</p>
+                    <p class="pro_sub">(Olive, 256 GB)</p>
+                </div>
+                <div class="col-card col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" id="Samsung-11">
+                    <img class="product_pic" src="./img/phones/samsung/samsung-galaxy-f13-waterfall-blue.webp" alt="">
+                    <p class="pro_head">SAMSUNG Galaxy A33</p>
+                    <p class="pro_sub">(Awesome Blue, 128 GB)</p>
+                </div>
+                <div class="col-card col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" id="Samsung-12">
+                    <img class="product_pic" src="./img/phones/samsung/SAMSUNG-Galaxy-S21-FE-Graphite.webp" alt="">
+                    <p class="pro_head">SAMSUNG Galaxy S21 FE 5G</p>
+                    <p class="pro_sub">(Graphite, 128 GB)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- cart-details -->
+    <section class="cart-section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-sm-8">
+                    <div class="cart-details">
+                        <h3>My Cart</h3>
+                        <hr>
+                        <span class="empty-cart">Cart is empty</span>
+                        <div class="cart-pro">
+                            <div class="row">
+                                <div class="cart0 col-12 col-sm-2">
+                                    <img id="cart-img1" src="./img/company/apple.png" alt="">
+                                </div>
+                                <div class="cart0 col-12 col-sm-10">
+                                    <span id="cart_pro_name1">Product Name</span><br>
+                                    <span id="cart_pro_color1">Product Color</span><br>
+                                    <span class="old-price-cart" id="cart_pro_old_price1">Product Old Price</span><br>
+                                    <span id="cart_pro_new_price1">Product new Price</span>
+                                </div>
+                                <div class="cart1 col-12 col-sm-2">
+                                    <img id="cart-img2" src="./img/company/apple.png" alt="">
+                                </div>
+                                <div class="cart1 col-12 col-sm-10">
+                                    <span id="cart_pro_name2">Product Name</span><br>
+                                    <span id="cart_pro_color2">Product Color</span><br>
+                                    <span class="old-price-cart" id="cart_pro_old_price2">Product Old Price</span><br>
+                                    <span id="cart_pro_new_price2">Product new Price</span>
+                                </div>
+                                <div class="cart2 col-12 col-sm-2">
+                                    <img id="cart-img3" src="./img/company/apple.png" alt="">
+                                </div>
+                                <div class="cart2 col-12 col-sm-10">
+                                    <span id="cart_pro_name3">Product Name</span><br>
+                                    <span id="cart_pro_color3">Product Color</span><br>
+                                    <span class="old-price-cart" id="cart_pro_old_price3">Product Old Price</span><br>
+                                    <span id="cart_pro_new_price3">Product new Price</span>
+                                </div>
+                                <div class="cart3 col-12 col-sm-2">
+                                    <img id="cart-img4" src="./img/company/apple.png" alt="">
+                                </div>
+                                <div class="cart3 col-12 col-sm-10">
+                                    <span id="cart_pro_name4">Product Name</span><br>
+                                    <span id="cart_pro_color4">Product Color</span><br>
+                                    <span class="old-price-cart" id="cart_pro_old_price4">Product Old Price</span><br>
+                                    <span id="cart_pro_new_price4">Product new Price</span>
+                                </div>
+                                <div class="cart4 col-12 col-sm-2">
+                                    <img id="cart-img5" src="./img/company/apple.png" alt="">
+                                </div>
+                                <div class="cart4 col-12 col-sm-10">
+                                    <span id="cart_pro_name5">Product Name</span><br>
+                                    <span id="cart_pro_color5">Product Color</span><br>
+                                    <span class="old-price-cart" id="cart_pro_old_price5">Product Old Price</span><br>
+                                    <span id="cart_pro_new_price5">Product new Price</span>
+                                </div>
+                                <div class="col-12 col-sm-10">
+                                    <button class="btn btn-warning" id="cart-proceed-btn" data-toggle="modal" data-target="#error_modal_popup">Proceed to checkout</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-4">
+                    <div class="cart-amount">
+                        <h3>PRICE DETAILS</h3><hr>
+                        <div class="cart-price-details">
+                            <span>Price</span><span id="price-amount">0000</span><br>
+                            <span>Discount</span><span id="discount-amount">0000</span><hr>
+                            <span><b>Total Amount</span><span id="total-amount">0000</span></b>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end-cart-details -->
+
+    <!-- end samsung products -->
+    <section class="footer" id="footer">
+        <div class="container-fluid">
+            <div class="footer-items">
+                <div class="row">
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-3">
+                        <p class="ab-head">ABOUT</p>
+                        <p>Contact Us</p>
+                        <p>About Us</p>
+                        <p>Careers</p>
+                        <p>e-phone Stories</p>
+                        <p>Press</p>
+                        <p>e-phone Wholesale</p>
+                        <p>Corporate Information</p>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-3">
+                        <p class="ab-head">HELP</p>
+                        <p>Payments</p>
+                        <p>Shipping</p>
+                        <p>Cancellation & Returns</p>
+                        <p>FAQ</p>
+                        <p>Report Infringement</p>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-3">
+                        <p class="ab-head">POLICY</p>
+                        <p>Return Policy</p>
+                        <p>Terms Of Use</p>
+                        <p>Security</p>
+                        <p>Privacy</p>
+                        <p>Sitemap</p>
+                        <p>EPR Compliance</p>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-3">
+                        <p class="ab-head">Mail Us:</p>
+                        <p>E-Phone Internet Private Limited, Amal Jyothi College of Engineering, Koovappally (PO),
+                            Kottayam - 686518</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-3">
+                        <a href=""><i class="bi bi-question-circle"></i> Help Center</a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-3">
+                        <a href="tel:8078234246"><i class="bi bi-phone"></i> 8078234246</a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-3">
+                        <a href="mailto:mail.ajulkjose@gmail.com"><i class="bi bi-envelope"></i>
+                            ecart.support@gmail.com</a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-3">
+                        <span>© Copyright ecart. All Rights Reserved</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <section id="login_page">
+        <div class="center">
+            <h1>Login</h1>
+            <p class="error_msg"></p>
+            <form>
+                <table class="login-table">
+                    <tr>
+                        <th>Username : </th>
+                        <td><input type="text" placeholder="Username" id="username" class="form-control"></td>
+                        <td id="log-usr-err" class="err-msg"></td>
+                    </tr>
+                    <tr>
+                        <th>Password : </th>
+                        <td><input type="password" placeholder="Password" id="log_pass" class="form-control"></td>
+                        <td id="log-pswd-err" class="err-msg"></td>
+                    </tr>
+                    <tr>
+                        <th><a href="index.html" class="btn btn-danger" id="btn-log-close">Close</a></th>
+                        <td><a class="btn btn-success" id="btn-log-login">Login</a></td>
+                    </tr>
+                </table>
+            </form><br>
+        </div>
+    </section>
+
+    <section id="register_page">
+        <div class="center">
+            <h1>Register</h1>
+            <p class="error_msg"></p>
+            <form>
+                <table class="register-table">
+                    <tr>
+                        <th>Name (3-20) : </th>
+                        <td><input type="text" placeholder="Name" id="reg_name" class="form-control"></td>
+                        <td id="reg-name-err" class="err-msg"></td>
+                    </tr>
+                    <tr>
+                        <th>E-mail : </th>
+                        <td>
+                            <div class="input-group mb-3">
+                                <input type="email" class="form-control" placeholder="E-mail" id="reg_email">
+                                <span class="input-group-text" id="basic-addon1">@gmail.com</span>
+                            </div>
+                        </td>
+                        <td id="reg-email-err" class="err-msg"></td>
+                    </tr>
+                    <tr>
+                        <th>Phone Number : </th>
+                        <td><div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">+91</span>
+                            <input type="text" class="form-control" placeholder="Phone Number" id="reg_phone">
+                          </div>
+                        </td>
+                        <td id="reg-phone-err" class="err-msg"></td>
+                    </tr>
+                    <tr>
+                        <th>Username : </th>
+                        <td><input type="text" placeholder="Username" id="reg_uname" class="form-control"></td>
+                        <td id="reg-uname-err" class="err-msg"></td>
+                    </tr>
+                    <tr>
+                        <th>Password : </th>
+                        <td><input type="password" placeholder="Password" id="reg_pswd" class="form-control"></td>
+                        <td id="reg-pswd-err" class="err-msg"></td>
+                    </tr>
+                    <tr>
+                        <th>Confirm Password : </th>
+                        <td><input type="password" placeholder="Confirm Password" id="reg_cpswd" class="form-control">
+                        </td>
+                        <td id="reg-cpswd-err" class="err-msg"></td>
+                    </tr>
+                    <tr>
+                        <td><a href="index.html" class="btn btn-danger reg-btn" id="btn-log-close">Close</a></td>
+                        <td><a class="btn btn-success " id="btn-log-register">Register</a></td>
+                    </tr>
+                </table>
+            </form><br>
+        </div>
+    </section>
+    <section id="error_modal">
+        <!-- Modal -->
+        <div class="modal fade" id="error_modal_popup" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Message</h5>
+                        
+                    </div>
+                    <div class="modal-body">
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+</body>
+<script src="./script.js"></script>
+
+</html>
